@@ -16,16 +16,16 @@ pipeline {
             }
         }
 
-        stage('Desplegar en Apache') {
-            steps {
-                echo 'Desplegando proyecto...'
+      stage('Desplegar en Apache') {
+    steps {
+        echo 'Desplegando proyecto...'
 
-                sh '''
-                mkdir -p /var/jenkins_home/deploy
+        sh '''
+        rm -rf /var/www/html/cv_site
+        mkdir -p /var/www/html/cv_site
 
-                cp -r * /var/jenkins_home/deploy/
-                '''
-            }
-        }
+        cp -r * /var/www/html/cv_site/
+        '''
+    }
     }
 }
