@@ -17,13 +17,10 @@ pipeline {
         }
 stage('Desplegar en Apache') {
     steps {
-        echo 'Desplegando proyecto...'
-
         sh '''
-        sudo rm -rf /var/www/html/cv_site
-        sudo mkdir -p /var/www/html/cv_site
-        sudo cp -r * /var/www/html/cv_site/
-        sudo chown -R www-data:www-data /var/www/html/cv_site
+        rm -rf /var/www/html/cv_site
+        mkdir -p /var/www/html/cv_site
+        cp -r * /var/www/html/cv_site/
         '''
     }
 }
