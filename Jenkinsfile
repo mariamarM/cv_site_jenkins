@@ -17,6 +17,8 @@ pipeline {
         }
 stage('Desplegar en Apache') {
     steps {
+        echo 'Desplegando proyecto...'
+
         sh '''
         rm -rf /var/www/html/cv_site
         mkdir -p /var/www/html/cv_site
