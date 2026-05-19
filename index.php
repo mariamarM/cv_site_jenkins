@@ -114,6 +114,8 @@ $projects = [
 
     <header>
         <h1><?php echo $name; ?></h1>
+        <img src="https://ik.imagekit.io/id39lfcc7d/img_Dni_yo.png jpg    
+            ?tr=w-300,h-300,c-maintain_ratio,f-webp,q-80"   alt="Foto de perfil" >
         <h3><?php echo $title; ?></h3>
         <p>
             📍 <?php echo $location; ?> |
