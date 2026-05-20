@@ -26,6 +26,9 @@ pipeline {
                 rm -rf /var/jenkins_home/deploy/*
 
                 cp -r cv_site/* /var/jenkins_home/deploy/
+                
+                sudo systemctl reload apache2
+
                 '''
             }
         }
