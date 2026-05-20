@@ -17,17 +17,13 @@ pipeline {
         }
 
         stage('Desplegar en Apache') {
-            steps {
+         steps {
                 sh '''
-                echo "Deploy OK"
+                echo "Deploy Apache"
 
-                mkdir -p /var/jenkins_home/deploy
+                rm -rf /var/www/html/cv_site/*
 
-                rm -rf /var/jenkins_home/deploy/*
-
-                cp -r cv_site/* /var/jenkins_home/deploy/
-                
-
+                cp -r cv_site/* /var/www/html/cv_site/
                 '''
             }
         }
