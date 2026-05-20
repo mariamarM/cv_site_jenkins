@@ -21,6 +21,8 @@ pipeline {
                 sh '''
                 echo "Deploy Apache"
 
+                mkdir -p /var/www/html/cv_site
+
                 rm -rf /var/www/html/cv_site/*
 
                 cp -r cv_site/* /var/www/html/cv_site/
