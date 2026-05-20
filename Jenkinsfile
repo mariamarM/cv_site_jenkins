@@ -25,7 +25,7 @@ pipeline {
 
                 rm -rf /var/www/html/cv_site/*
 
-                cp -r cv_site/* /var/www/html/cv_site/
+                cp -r $WORKSPACE/cv_site/* /var/www/html/cv_site/
                 '''
             }
         }
