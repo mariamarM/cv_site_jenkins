@@ -143,6 +143,3 @@ Desplegado automáticamente en Raspberry Pi mediante Jenkins.
 # Autor
 
 Maria Andreo
-
-- GitHub: https://github.com/TU_USUARIO
-- Email: tuemail@ejemplo.com
