@@ -91,7 +91,7 @@ $projects = [
 
         .skills span {
             display: inline-block;
-            background: #007BFF;
+            background: #5c0220;
             color: white;
             padding: 5px 10px;
             margin: 5px;
